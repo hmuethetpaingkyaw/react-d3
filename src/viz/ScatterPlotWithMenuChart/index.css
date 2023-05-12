@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+pre {
+  font-size: 7em;
+}
+.tick line {
+  stroke: #C0C0BB;
+}
+.tick text {
+  fill: #635F5D;
+}
+.mark {
+  fill: #137B80;
+}
+.axis-label, .dropdown-label {
+  font-size: 2.5em;
+  fill: #635F5D;
+  color: #635F5D;
+}
+.menus-container {
+  margin-top: 20px;
+  margin-right: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropdown-label {
+  margin-left: 100px;
+  margin-right: 15px;
+}
+.Dropdown-root {
+  font-size: 1.5em;
+  width: 300px;
+  display: inline-block;
+}
+.Dropdown-menu {
+  max-height: 400px;
+}
