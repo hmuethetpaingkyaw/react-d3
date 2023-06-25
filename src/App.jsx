@@ -8,7 +8,9 @@
 // import ColorScatterChart from './viz/ColorScatterChart'
 // import LegendColorScatterChart from './viz/LegendColorScatterChart'
 // import InteractiveScatterChart from './viz/InteractiveScatterChart'
-import PointOnMap from './viz/PointOnMap'
+// import MonthBarChart from './viz/MonthBarChart'
+import MyanmarMap from './viz/MyanmarMap'
+// import PointOnMap from './viz/PointOnMap'
 function App() {
 
   return (
@@ -21,7 +23,9 @@ function App() {
  //<ColorScatterChart />
 // <LegendColorScatterChart />
 //<InteractiveScatterChart />
-<PointOnMap />
+//<PointOnMap />
+//<MonthBarChart/>
+<MyanmarMap/>
   )
 }
 
