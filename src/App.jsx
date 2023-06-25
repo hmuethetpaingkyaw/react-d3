@@ -1,32 +1,36 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-// import BarChart from './viz/BarChart'
-// import PieChart from './viz/PieChart'
-// import RefractorBarChart from './viz/refractorBarChart'
-// import ScatterPlotChart from './viz/ScatterPlotChart'
-// import LineChart from './viz/LineChart'
-// import ScatterPlotWithMenuChart from './viz/ScatterPlotWithMenuChart'
-// import ColorScatterChart from './viz/ColorScatterChart'
-// import LegendColorScatterChart from './viz/LegendColorScatterChart'
-// import InteractiveScatterChart from './viz/InteractiveScatterChart'
-// import MonthBarChart from './viz/MonthBarChart'
-import MyanmarMap from './viz/MyanmarMap'
-// import PointOnMap from './viz/PointOnMap'
+import "./index.css";
+import Layout from "./layouts/DefaultLayout";
+import routes from "./routes";
+
 function App() {
-
   return (
     // <PieChart />
     //<BarChart />
-  //  <RefractorBarChart/>
- // <ScatterPlotChart />
- //<LineChart/>
- //<ScatterPlotWithMenuChart />
- //<ColorScatterChart />
-// <LegendColorScatterChart />
-//<InteractiveScatterChart />
-//<PointOnMap />
-//<MonthBarChart/>
-<MyanmarMap/>
-  )
+    //  <RefractorBarChart/>
+    // <ScatterPlotChart />
+    //<LineChart/>
+    //<ScatterPlotWithMenuChart />
+    //<ColorScatterChart />
+    // <LegendColorScatterChart />
+    //<InteractiveScatterChart />
+    //<PointOnMap />
+    //<MonthBarChart/>
+    //<MyanmarMap/>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          {routes.map((route, index) => {
+            const Component = route.component;
+            return (
+              <Route path={route.path} element={<Component />} key={index} />
+            );
+          })}
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
