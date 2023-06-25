@@ -1,4 +1,4 @@
 
 export default function Home () {
-    return <h1 className="text-red-500">Home</h1>
+    return <h1>Hello, This is my react d3 practice playground.</h1>
 }
