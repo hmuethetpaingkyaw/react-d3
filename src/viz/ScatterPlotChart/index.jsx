@@ -75,6 +75,7 @@ const ScatterPlotChart = () => {
           tooltipFormat={xAxisTickFormat}
           circleRadius={7}
         />
+       
       </g>
     </svg>
   );
